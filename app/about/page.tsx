@@ -15,7 +15,7 @@ const AboutPage = () => {
             <span className="sm:hidden">Smart AI</span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
-            Welcome to{" "}
+            About{" "}
             <span className="bg-gradient-to-r from-pink-600 via-pink-500 to-pink-400 bg-clip-text text-transparent">
               PiggyPal
             </span>
@@ -28,7 +28,7 @@ const AboutPage = () => {
               href="/sign-in"
               className="group relative overflow-hidden bg-gradient-to-r from-pink-600 via-pink-500 to-pink-400 hover:from-pink-700 hover:via-pink-600 hover:to-pink-500 text-white px-8 py-4 rounded-2xl font-bold shadow-lg hover:shadow-2xl transition-transform duration-200 transform hover:-translate-y-1"
             >
-              <span className="relative z-10">Join PiggyPal</span>
+              <span className="relative z-10">Start Your Journey!</span>
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-2xl"></div>
             </Link>
             <Link
