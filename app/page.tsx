@@ -6,6 +6,7 @@ import RecordChart from '@/components/RecordChart';
 import RecordHistory from '@/components/RecordHistory';
 import { currentUser } from '@clerk/nextjs/server';
 import { Hand, Calendar, Zap, BadgeCheck } from 'lucide-react';
+import Image from 'next/image';
 
 export default async function HomePage() {
   const user = await currentUser();
@@ -23,9 +24,11 @@ export default async function HomePage() {
             <div className="bg-white/90 dark:bg-pink-900/70 backdrop-blur-md p-6 sm:p-8 rounded-3xl shadow-xl border border-pink-100/50 dark:border-pink-700/50 hover:shadow-2xl transition-all flex flex-col sm:flex-row items-center sm:items-start gap-6">
               {/* User Image */}
               <div className="relative flex-shrink-0">
-                <img
+                <Image
                   src={user.imageUrl}
-                  alt={`${user.firstName}'s profile`}
+                  alt={`${user.firstName}&apos;s profile`}
+                  width={112} // matches w-28
+                  height={112} // matches h-28
                   className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl border-4 border-pink-200 dark:border-pink-700 shadow-lg object-cover"
                 />
                 <div className="absolute -bottom-2 -right-2 w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full border-2 border-white dark:border-pink-900 flex items-center justify-center shadow-md">

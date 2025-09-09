@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart3, TrendingUp, TrendingDown, Loader2, AlertTriangle } from 'lucide-react';
+import { BarChart3, TrendingUp, TrendingDown,  AlertTriangle } from 'lucide-react';
 import getUserRecord from '@/app/actions/getUserRecord';
 import getBestWorstExpense from '@/app/actions/getBestWorstExpense';
 
